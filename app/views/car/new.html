@@ -1,0 +1,20 @@
+<div ng-app="carApp">
+
+  <div ng-controller="NewCtrl">
+    <div class="spinner" ng-show="loading"></div>
+    <div class="content-padded">
+      <h1>Add a new car</h1>
+
+      <form class="simple-form">
+        Name: <input type="text" ng-model="car.name" /><br />
+        Description: <input type="text" ng-model="car.description" /><br />
+
+        <a class="topcoat-button" hm-tap="create(car)">Add</a>
+        <a class="topcoat-button" hm-tap="close()">Cancel</a>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
